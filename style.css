@@ -693,71 +693,165 @@ footer div p.copy {
 	}
 	.element-right {
 		transform: translateX(20px);
+	}	footer div img {
+		width: 250px;
+		height: 190px;
 	}
 }
 @media (max-width: 468px) {
-	main .device p.reviewed {
-		top: 38.5rem;
+	body {
+		font-size: 0.9rem; /* уменьшим общий размер текста */
 	}
-
-	main .cognitive {
-		gap: 3rem;
+	.container {
+		width: 100%; /* контейнер занимает всю ширину экрана */
+		padding: 0 1rem;
+	}
+	header .header_container {
+		flex-direction: column; /* вертикальная ориентация */
+		gap: 1rem;
+		text-align: center;
+	}
+	nav {
+		font-size: 1rem;
+		padding: 0.5rem;
+	}
+	main .serious-tracking p {
+		font-size: 6vw; /* адаптируемый размер текста */
+		text-align: center;
+		margin: 0.5rem 0;
+	}
+	main .device {
+		height: 500px;
+	}
+	main .device img {
+		width: 80%;
+		height: 500.67px;
+		margin: auto;
+	}
+	main .device p {
+		display: none;
 	}
 
 	main .cognitive header,
-	main .reps header {
-		font-size: 9vw;
+	main .reps header,
+	main .feature header {
+		font-size: 3rem;
 		text-align: center;
 	}
-
 	main .cognitive p.made {
-		font-size: 1.5rem;
+		font-size: 25px;
+		text-align: center;
+		margin: 0;
 	}
-
 	main .cognitive header p.design {
 		margin-left: 0;
 	}
-
 	main .cognitive .cards {
-		grid-template-columns: 1fr;
-		grid-template-areas:
-			'touch'
-			'fast'
-			'per'
-			'works'
-			'swipe';
-		grid-gap: 1.5rem;
+		display: none;
+	}
+	main .reps .reps_container {
+		display: none;
+	}
+	main .reps header p:nth-child(2) {
+		margin-left: 0;
+	}
+	main .reps .reps_container img {
+		width: 100%;
+		height: 500.67px;
 	}
 
-	main .cognitive .cards div,
-	main .feedback .cards article {
-		font-size: 0.875rem;
-	}
-
-	main .cognitive .explain,
-	main .reps .want,
-	main .ideas p {
-		font-size: 1.125rem;
+	main .feature header {
+		font-size: 60px;
 		text-align: center;
 	}
-
+	main .feature header p:nth-child(2) {
+		margin-left: 0;
+	}
+	main .feature .feature-content h3 {
+		font-size: 30px;
+		line-height: 60px;
+	}
+	main .feature .feature-content p {
+		font-size: 20px;
+		line-height: 20px;
+	}
+	main .feedback header {
+		margin-bottom: 30px;
+	}
 	main .feedback header h3 {
-		font-size: 7vw;
+		font-size: 60px;
+		line-height: 60px;
+		margin-bottom: 15px;
 	}
-
-	main .feedback header p,
+	main .feedback header p {
+		font-size: 20px;
+		line-height: 20px;
+	}
+	main .feedback .cards {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+	main .feedback .cards article {
+		gap: 15px;
+	}
+	main .feedback .cards article .stars {
+		gap: 3px;
+	}
+	main .feedback .cards article .stars img {
+		width: 20px;
+		height: 18px;
+	}
+	main .feedback .cards article h4 {
+		font-size: 17px;
+		line-height: 18px;
+		text-align: left;
+	}
 	main .feedback .cards article p {
-		font-size: 1rem;
+		font-size: 10px;
+		line-height: 25px;
+		letter-spacing: -0.4124999940395355px;
 	}
-
-	footer div img {
-		width: 80%;
-		height: auto;
-		margin: 0 auto;
+	main .ideas h2 {
+		font-size: 60px;
+		line-height: 60px;
+		margin-bottom: 15px;
 	}
-
+	main .ideas p {
+		font-size: 20px;
+		line-height: 20px;
+	}
+	main .ideas div {
+		height: 300px;
+		border: 4.13px solid #2d2d32;
+		border-radius: 20px;
+	}
+	main .ideas div p {
+		font-size: 50px;
+		line-height: 50px;
+	}
+	footer {
+		padding: 1rem;
+	}
 	footer div p {
-		font-size: 1.25rem;
+		font-size: 1rem;
 		text-align: center;
+	}
+	.element-animation {
+		opacity: 1;
+		transition: all 1.5s;
+		transform: translateY(0);
+	}
+	.element-animation.element-show {
+		transform: translateY(0);
+	}
+	.element-left {
+		transform: translateX(0);
+	}
+	.element-right {
+		transform: translateX(0);
+	}
+	footer div img {
+		width: 170px;
+		height: 100px;
 	}
 }
