@@ -695,3 +695,69 @@ footer div p.copy {
 		transform: translateX(20px);
 	}
 }
+@media (max-width: 468px) {
+	main .device p.reviewed {
+		top: 38.5rem;
+	}
+
+	main .cognitive {
+		gap: 3rem;
+	}
+
+	main .cognitive header,
+	main .reps header {
+		font-size: 9vw;
+		text-align: center;
+	}
+
+	main .cognitive p.made {
+		font-size: 1.5rem;
+	}
+
+	main .cognitive header p.design {
+		margin-left: 0;
+	}
+
+	main .cognitive .cards {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			'touch'
+			'fast'
+			'per'
+			'works'
+			'swipe';
+		grid-gap: 1.5rem;
+	}
+
+	main .cognitive .cards div,
+	main .feedback .cards article {
+		font-size: 0.875rem;
+	}
+
+	main .cognitive .explain,
+	main .reps .want,
+	main .ideas p {
+		font-size: 1.125rem;
+		text-align: center;
+	}
+
+	main .feedback header h3 {
+		font-size: 7vw;
+	}
+
+	main .feedback header p,
+	main .feedback .cards article p {
+		font-size: 1rem;
+	}
+
+	footer div img {
+		width: 80%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	footer div p {
+		font-size: 1.25rem;
+		text-align: center;
+	}
+}
